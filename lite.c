@@ -10,7 +10,7 @@ void input() {
 }
 void output(double a, double b, double h, double r) {
     if( a > (r*2) && b > (r*2) && h > (r*2)) { 
-        printf("\n\"Holed trapezium area = %.2f unit.\"\n\n", ((a + b)/2 * h) - (M_PI * pow(r, 2)));} 
+        printf("\n\"Holed trapezium area = %.2lf unit.\"\n\n", ((a + b)/2 * h) - (M_PI * pow(r, 2)));} 
     else { 
         printf("\n\"INPUT ERROR!!\"\n\n");}    
 }

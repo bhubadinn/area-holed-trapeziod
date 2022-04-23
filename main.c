@@ -23,7 +23,7 @@ void output(double a, double b, double h, double r) {
     // กำหนดเงื่อนไข
     if( a > (r*2) && b > (r*2) && h > (r*2)) {
         // การคำนวณและแสดงผลการคำนวณ
-        printf("\n\"Holed trapezium area = %.2f unit.\"\n\n", ((a + b)/2 * h) - (M_PI * pow(r, 2)));
+        printf("\n\"Holed trapezium area = %.2lf unit.\"\n\n", ((a + b)/2 * h) - (M_PI * pow(r, 2)));
     } else {
         // กรณีที่ข้อมูลอินพุตไม่เป็นไปตามเงื่อนไข
         printf("\n\"INPUT ERROR!!\"\n\n");
