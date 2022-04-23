@@ -4,6 +4,9 @@
         "locale": "c",
         "ostream": "c",
         "*.tcc": "c",
-        "memory": "c"
+        "memory": "c",
+        "random": "c",
+        "stdio.h": "c",
+        "math.h": "c"
     }
 }
