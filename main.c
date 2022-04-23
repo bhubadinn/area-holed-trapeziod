@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 #include<string.h>
 #include<math.h>
 
@@ -7,7 +8,7 @@ float Data[4], result;
 
 // ฟังก์ชั่นอินพุต
 void input() {
-    char var_name[1];
+    char *var_name = malloc(2);
 
     printf("\nPlease input..\n");
 
@@ -28,7 +29,7 @@ void input() {
         printf("  %c: ", var_name[0]);    
         scanf("%f", &Data[i]); getchar();
     }
-    memset(var_name, 0, 1);
+    free(var_name);
 }
 
 
@@ -61,7 +62,7 @@ int main() {
     // เรียกใช้ฟังก์ชั่นเอาต์พุต
     output();
 
-    printf("Please 'Enter' to exit..  ");
+    printf("Please 'Enter' button to exit..  ");
     getchar(); 
     return 0;
 }
